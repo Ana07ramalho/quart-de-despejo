@@ -1,0 +1,112 @@
+/* CABECALHO */
+header {
+    text-align: center;
+    font-size: 175%;
+    color: var(--header);
+    text-shadow: 0 2px 2px var(--black);
+}
+
+header .header-image {
+    transform: scale(.75) translateZ(.25px) translateX(-94%) translateY(-100%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--background);
+}
+
+/* CORPO */
+.slide:nth-child(2n) 
+.slide-title {
+    margin-left: 0;
+}
+
+.slide:nth-child(2n+1) 
+.slide-title {
+    margin-right: 0;
+}
+
+/* RODAPE */
+.foot {
+    text-align: center;
+    font-size: 200%;
+    color: var(--white);
+    text-shadow: 0 2px 2px var(--black);
+}
+
+/* FUNDO */
+#title {
+    background-image: url("ex1.jpg");
+    z-index: 2;
+}
+
+#title h1 {
+    transform: translateZ(.25px) scale(.75);
+    transform-origin: 50% 100%;
+}
+
+#summarySlide::before {
+    background-image: url("slide1.jpng");
+}
+
+#authorSlide {
+    background-image: url("slide2.jpng");
+    z-index: 2;
+}
+
+#bookInfoSlide::before {
+    background-image: url("slide3.jpng");
+}
+
+#summarySlide::before,
+#bookInfoSlide::before {
+    transform: translateZ(-1px) scale(2);
+}
+
+#footerSlide {
+    background: #222;
+}
+
+/* IMAGENS */
+img {
+    box-shadow: 0 0 8px var(--shadow);
+}
+
+img:last-of-type {
+    transform: scale(.6) translateZ(.4px) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+#headerImage1 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 220px;
+    height: 240px;
+}
+
+#headerImage1, 
+#headerImage2, 
+.author-image, 
+.book-cover-image {
+    position: absolute;
+    width: 420px;
+    height: 240px;
+}
+
+#headerImage1 {
+    top: 100%;
+    left: 75%;
+}
+
+#headerImage2 {
+    top: 65%;
+    left: 55%;
+}
+
+.author-image {
+    top: 45%;
+    left: 60%;
+}
+
+.book-cover-image {
+    top: 85%;
+    left: 50%;
+}
